@@ -8,8 +8,7 @@ already_mined = {
 
 space_structure = {
 	OR = {
-		is_planet_class = pc_habitat
-		is_planet_class = pc_ringworld_habitable
+		is_artificial = yes
 		is_planet_class = pc_ringworld_seam
 		is_planet_class = pc_ringworld_tech
 		is_planet_class = pc_ringworld_habitable_damaged

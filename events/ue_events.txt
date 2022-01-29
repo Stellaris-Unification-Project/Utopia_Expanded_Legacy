@@ -35,7 +35,7 @@ country_event = {
 	
 	immediate = {
 		FROMFROM = { save_event_target_as = dyson_ring_system }
-		every_country = {
+		every_playable_country = {
 			limit = {
 				is_ai = no
 				NOT = { is_same_value = ROOT }

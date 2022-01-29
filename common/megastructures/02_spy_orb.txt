@@ -32,7 +32,7 @@ spy_orb_0 = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no
@@ -59,7 +59,7 @@ spy_orb_0 = {
 		}
 		#custom_tooltip = {
 		#	fail_text = "requires_no_existing_megastructure"
-		#	NOT = { has_any_megastructure = yes }
+		#	has_any_megastructure = no
 		#}
 	}
 	
@@ -76,7 +76,7 @@ spy_orb_0 = {
 			}
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 
 			#custom_tooltip = { # balance for think tanks
@@ -97,7 +97,7 @@ spy_orb_0 = {
 				solar_system = {
 					NOR = {
 						has_any_megastructure = yes
-						any_planet = {
+						any_system_planet = {
 							OR = {
 								is_planet_class = pc_ringworld_habitable
 								is_planet_class = pc_ringworld_habitable_damaged
@@ -117,10 +117,7 @@ spy_orb_0 = {
 		factor = 10
 		modifier = {
 			factor = 2.0
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 		
 		modifier = {

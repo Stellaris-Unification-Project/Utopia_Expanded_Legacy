@@ -1,0 +1,118 @@
+#######################################
+### Utopia Expanded Ascension Perks ###
+#######################################
+
+ap_master_of_the_heavens = {
+	on_enabled = {
+		custom_tooltip = "allow_advanced_ringworlds"
+		add_research_option = tech_advanced_megastructure_engineering
+		add_tech_progress = {
+			tech = tech_advanced_megastructure_engineering
+			progress = 0.1
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_mega_engineering"
+			has_technology = tech_mega_engineering
+		}
+		custom_tooltip = {
+			fail_text = "requires_circle_of_life"
+			has_ascension_perk = ap_the_circle_of_life
+		}
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_master_of_the_heavens
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+}
+ap_master_builders = {
+	on_enabled = {
+		if = {
+			limit = { 
+				NOT = { has_technology = tech_mega_engineering }
+			}
+			give_technology = { message = no tech = tech_mega_engineering }
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+	modifier = {
+		megastructure_build_speed_mult = 1
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_master_builders
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+}
+
+ap_the_circle_of_life = {
+	on_enabled = {
+		custom_tooltip = "allow_ring_world"
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_mega_engineering"
+			has_technology = tech_mega_engineering
+		}		
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_the_circle_of_life
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+}

@@ -1,0 +1,457 @@
+### planetary entities
+
+@ringworld_segment_size = 50
+
+entity = {
+	name = "ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
+	}
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+	
+	#attach = { root = "ringworld_habitable_machine_entity_01_clouds_entity" }
+}
+
+### Arthropoid Machine Ringworld
+
+entity = {
+	name = "arthropoid_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_arthropoid_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_arthropoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Avian
+
+entity = {
+	name = "avian_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_avian_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_avian_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Fungoid
+
+entity = {
+	name = "fungoid_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_fungoid_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_fungoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Mammalian
+
+entity = {
+	name = "mammalian_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_mammalian_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_mammalian_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Molluscoid
+
+entity = {
+	name = "molluscoid_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_molluscoid_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_molluscoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Plantoid
+
+entity = {
+	name = "plantoid_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_plantoid_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_plantoid_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+### Reptilian
+
+entity = {
+	name = "reptilian_01_ringworld_habitable_machine_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		name = "pCube20Shape"
+		index = 0
+		texture_diffuse = "ringworld_habitable_reptilian_01_diffuse.dds"
+		texture_normal = "ringworld_habitable_normal.dds"
+		texture_specular = "ringworld_habitable_reptilian_01_spec.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface9Shape"
+		index = 0
+		texture_diffuse = "ai_01_diffuse.dds"
+		texture_normal = "ai_01_normals.dds"
+		texture_specular = "ai_01_specular.dds"
+		shader = "PdxMeshTerra"
+	}
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+# Deprecated Ringworld Cloud Entity
+
+entity = {
+	name = "ringworld_habitable_machine_entity_01_clouds_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_habitable_01_clouds_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 } }
+	state = { name = "construction" }
+
+	meshsettings = {
+		name = "polySurface34Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	meshsettings = {
+		name = "polySurface35Shape"
+		index = 0
+		texture_diffuse = "clouds_medium_diffuse.dds"
+		texture_normal = "clouds_medium_normal.dds"
+		texture_specular = "clouds_medium_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+		uv_animation_speed 		= 0.004
+		uv_animation_direction 	= { 1.0 0.0 }
+	}
+}
